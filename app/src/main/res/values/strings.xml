@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MovieCatalog</string>
+    <string name="search_hint">Поиск по названию фильма</string>
+    <string name="alert_query">Нам не удалось обработать ваш запрос. Попробуйте еще раз</string>
+</resources>

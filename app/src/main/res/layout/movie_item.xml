@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="183dp"
+    android:layout_marginBottom="@dimen/activity_bottom_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/movie_image"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/text_start_margin"
+            android:layout_marginTop="@dimen/text_top_margin"
+            android:layout_marginEnd="@dimen/text_start_margin"
+            android:layout_marginBottom="@dimen/text_top_margin">
+
+            <TextView
+                android:id="@+id/movie_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_marginEnd="5dp"
+                android:paddingBottom="@dimen/activity_bottom_margin"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="22sp"
+                android:textColor="@color/black_87"
+                android:layout_alignParentTop="true"
+                android:lineHeight="28sp"
+                android:text="Бегущий по лезвию "
+            />
+
+            <TextView
+                android:id="@+id/movie_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:ellipsize="end"
+                android:textColor="@color/black__54"
+                android:lineSpacingExtra="6sp"
+                android:lineHeight="20sp"
+                android:layout_below="@id/movie_name"
+                android:layout_above="@id/movie_date_txt"
+                android:text="Отставной детектив Рик Декард вновь восстановлен в полиции Лос-Анджелеса для поиска возглавляемой Роем Батти группы киборгов, совершившей побег из космической колонии на Землю."
+            />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_alendar"
+                android:layout_alignParentBottom="true"
+            />
+
+            <TextView
+                android:id="@+id/movie_date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="@color/black__54"
+                android:text="1 января 2017"
+                android:layout_toEndOf="@id/imageView"
+                android:layout_alignParentBottom="true"
+
+            />
+
+            <ImageButton
+                android:id="@+id/favorite_btn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_heart"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+            />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
